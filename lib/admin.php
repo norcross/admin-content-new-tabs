@@ -35,7 +35,7 @@ class AdminContentNewTabs_Admin {
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '.js' : '.min.js';
 
 		// Load the actual JS file.
-		wp_enqueue_script( 'acnt-front', plugins_url( '/js/acnt.script' . $suffix, __FILE__ ) , array( 'jquery' ), $vers, true );
+		wp_enqueue_script( 'acnt-script', plugins_url( '/js/acnt.script' . $suffix, __FILE__ ) , array( 'jquery' ), $vers, true );
 	}
 
 	// End our class.
